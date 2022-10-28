@@ -1,0 +1,73 @@
+<nav class="navbar navbar-dark bg-dark navbar-expand-md">
+  <nav class="navbar navbar-light bg-ligth text-white">
+    PYMES
+  </nav>
+  <button 
+    class="navbar-toggler" 
+    type="button" 
+    data-toggle="collapse" 
+    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+    aria-expanded="false" 
+    aria-label="Toggle navigation"
+    (click)="toggleNavbar()">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div 
+    class="collapse navbar-collapse" 
+    id="navbarSupportedContent"
+    [ngClass]="{ show: navbarOpen }">
+      <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+              <a 
+              class="nav-link"  
+              routerLink="/inicio"
+              >Inicio <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              routerLink="/articulosfamilias"
+              title="Listado Articulos Familia"
+              >ArticulosFamilias</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/articulos" title="Gestionar Articulos"
+              >Articulos</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/clientes" title="Gestionar Clientes"
+              >Clientes</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/ventas" title="Registrar Ventas"
+              >Ventas</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              routerLink="/ventasconsultas"
+              title="Ventas Consultas"
+              >Ventas Consultas</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">Acerca de</a>
+          </li>
+        </ul>
+    
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link">Bienvenido: Tomas Haro</a>
+          </li>
+          <li class="nav-item"><a class="nav-link">Cerrar Sesión</a></li>
+        </ul>
+      </div>
+    </nav>
+        
+
+      

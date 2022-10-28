@@ -1,0 +1,8 @@
+p {
+  font-family: Lato;
+}
+/* Bajar el contenido del body porque la fixed navbar ocupa el top de la pantalla*/
+#divBody {
+  min-height: 75rem;
+  padding-top: 4.5rem;
+}
